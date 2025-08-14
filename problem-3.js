@@ -10,7 +10,7 @@ function bestTeam(player1, player2) {
     if(total1 < total2){
         return player1.name;
     }
-    if(total2 < total1){
+    if (total1 > total2) {
         return player2.name;
     }
     if (total1 === total2){
