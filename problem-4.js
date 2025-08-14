@@ -17,7 +17,7 @@ function isSame(arr1, arr2) {
     return true;
 }
 
-// console.log(isSame([34, 5, 7, 9], null));
+// console.log(isSame([2, 5, 6], 256));
 // console.log(isSame({ data: [2, 5, 6] }, [2, 5, 6]));
 // console.log(isSame([1, 4, 5], [1, 4, 5]));
 // console.log(isSame([1, 2, 3], [1, 2, 3]));

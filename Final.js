@@ -3,16 +3,14 @@ function totalFine(fare) {
     if (typeof fare !== "number" || fare <= 0) {
         return "Invalid";
     }
-
     let surCharge = fare * (20 / 100);
     let serviceCharge = 30;
     let fine = fare + surCharge + serviceCharge;
-
     return fine;
 }
 
 // Problem-02 : Clean & Capitalize Characters
-function onlyCharacter(str) {
+function onlyCharacter(str){
     if (typeof str !== "string") {
         return "Invalid";
     }
@@ -24,7 +22,7 @@ function onlyCharacter(str) {
             noSpace += str[i];
         }
     }
-
+    
     result = noSpace.toUpperCase();
     return result;
 }
@@ -66,27 +64,4 @@ function isSame(arr1, arr2) {
     }
 
     return true;
-}
-
-// Problem-05: Exam Result Report Generator
-function resultReport(marks) {
-    if (!Array.isArray(marks)){
-        return "Invalid";
-    }
-
-    let sum = 0;
-    let passed = 0;
-    
-    for(let mark of marks){
-        sum += mark;
-        if(mark >= 40){
-            passed++;
-        }
-    }
-
-    let finalScore = marks.length ? Math.round(sum / marks.length) : 0;
-    let fail = marks.length - passed;
-    let pass = passed;
-
-    return {finalScore, pass, fail };
 }
